@@ -18,8 +18,8 @@ module.exports = function(controller) {
             });
         })
     });
-    controller.hears(['^pwned (.*)', '^pwned', 'fuck'], 'direct_message,direct_mention', function(bot, message) {
-        console.log('fuck');
+    controller.hears(['^pwned (.*)', '^pwned'], 'direct_message,direct_mention', function(bot, message) {
+        
         // carefully examine and
         // handle the message here!
         // Note: Platforms such as Slack send many kinds of messages, not all of which contain a text field!\
@@ -77,7 +77,7 @@ module.exports = function(controller) {
             let dirtyUserData = {};
             let getMemberInfo = function() {
                 setTimeout(function() {
-                    if (members[i].is_bot == false && members[i].real_name != "slackbot") { // fuck slack
+                    if (members[i].is_bot == false && members[i].real_name != "slackbot") { 
                         userID = members[i]["id"];
                         email = members[i]["profile"]["email"];
 
