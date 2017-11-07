@@ -1,0 +1,20 @@
+{
+  "name": "hibp-bot-2",
+  "version": "1.0.0",
+  "description": "Slackbot to scan HIBP for whether your users have been pwned",
+  "main": "bot.js",
+  "author": "Ben Cooper & Evan Sun",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@slack/client": "^3.14.1",
+    "body-parser": "^1.18.2",
+    "botkit": "^0.6.6",
+    "fs": "^0.0.1-security",
+    "node-env-file": "^0.1.8",
+    "request": "^2.83.0"
+  },
+  "scripts": {
+    "start": "node bot.js"
+  }
+}
