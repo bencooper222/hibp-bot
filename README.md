@@ -23,7 +23,8 @@
  
 ## Known Bugs
  - Each time you redeploy to Heroku, you'll have to go and login again
- - The app will fall asleep every day at 1 AM Gold Coast Time (hi Troy!)
+ - The app will fall asleep every day for at least 6 hours and whenever it hasn't been interacted with for an hour
+    - To fix that, we recommend either paying Heroku (boo) or using https://kaffeine.herokuapp.com/ and selecting a time of day where it's acceptable for it be down
  - It's unknown what sleeping will do to Heroku deploy - will update when we know
  - It's very unsteady - if you get an error, Heroku will probably just restart the app 
 
