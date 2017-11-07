@@ -8,7 +8,7 @@ var controller = Botkit.slackbot({
     stats_optout: true
 });
 
-if(contorller.debug===true){
+if(controller.debug===true){
   const env = require('node-env-file');
   env(__dirname + '/.env');
 }
