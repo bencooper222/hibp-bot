@@ -13,7 +13,7 @@
 		 - oauthRedirect - `yourHerokuUrl/oauth`
 		 - PORT - 80
  -  Go to`yourHerokuUrl/login` and authorize it.
- -  You'll get something that says it didn't work but it did (we just haven't added a handler to acknowledge that it worked)
+ -  You might get something that says it didn't work but it did (we just haven't added a handler to acknowledge that it worked)
  - Your app should work!
 	 - Try DMing the bot any of the following:
 		 - Pwned 
