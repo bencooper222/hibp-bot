@@ -1,19 +1,22 @@
 const Botkit = require('botkit');
 
-const env = require('node-env-file');
-env(__dirname + '/.env');
 
-
-
-if (!process.env.clientId || !process.env.clientSecret || !process.env.PORT) {
-    console.log('Error: Specify clientId clientSecret and PORT in environment');
-}
 
 var controller = Botkit.slackbot({
     json_file_store: './data/',
     debug: false,
     stats_optout: true
 });
+
+if(contorller.debug===true){
+  const env = require('node-env-file');
+  env(__dirname + '/.env');
+}
+
+
+if (!process.env.clientId || !process.env.clientSecret || !process.env.PORT) {
+  console.log('Error: Specify clientId clientSecret and PORT in environment');
+}
 
 console.log(process.env.clientId);
 
