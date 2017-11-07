@@ -1,0 +1,7 @@
+{
+    "name": "HIBP Slackbot",
+    "description": "A bot to let your Slack know about pwnage",
+    "repository": "https://github.com/bencooper222/hibp-bot-2",
+    "logo": "https://image.ibb.co/cEvt2b/image.png",
+    "keywords": ["node", "express", "pwnage"]
+  }
