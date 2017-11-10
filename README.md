@@ -1,6 +1,6 @@
 # hibp-bot-2
 
-##Features
+Features
 
 1. Check all emails in a slack organization, return a list of those pwned and not pwned, and privately DM each individual with details (allPwned).
 
