@@ -1,17 +1,29 @@
 const Botkit = require('botkit');
+const heroku = require('is-heroku');
+const env = require('node-env-file');
 
-
-
-var controller = Botkit.slackbot({
-    json_file_store: './data/',
-    debug: false,
-    stats_optout: true
-});
-
-if(controller.debug===true){
-  const env = require('node-env-file');
-  env(__dirname + '/.env');
+if(!heroku){ // if local
+    
+    env('.env');
 }
+
+
+const botOptions = {
+    debug: true,
+    stats_optout: true
+};
+
+if (process.env.MONGO_URI) {
+    let mongoStorage = require('botkit-storage-mongo')({mongoUri: process.env.MONGO_URI});
+    bot_options.storage = mongoStorage;
+} else {
+    bot_options.json_file_store = './data/'
+}
+
+
+const controller = Botkit.slackbot(botOptions);
+
+
 
 
 if (!process.env.clientId || !process.env.clientSecret || !process.env.PORT) {

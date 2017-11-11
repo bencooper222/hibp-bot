@@ -10,7 +10,9 @@
     "@slack/client": "^3.14.1",
     "body-parser": "^1.18.2",
     "botkit": "^0.6.6",
+    "botkit-storage-mongo": "^1.0.7",
     "fs": "^0.0.1-security",
+    "is-heroku": "^1.0.1",
     "node-env-file": "^0.1.8",
     "request": "^2.83.0"
   },
