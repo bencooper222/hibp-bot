@@ -15,9 +15,9 @@ const botOptions = {
 
 if (process.env.MONGO_URI) {
     let mongoStorage = require('botkit-storage-mongo')({mongoUri: process.env.MONGO_URI});
-    bot_options.storage = mongoStorage;
+    botOptions.storage = mongoStorage;
 } else {
-    bot_options.json_file_store = './data/'
+    botOptions.json_file_store = './data/'
 }
 
 
