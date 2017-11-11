@@ -1,5 +1,12 @@
 # hibp-bot-2
 
+Features
+
+1. Check all emails in a slack organization, return a list of those pwned and not pwned, and privately DM each individual with details (allPwned).
+
+2. DM each new user upon sign-up to the Slack whether their associated email has been pwned. Returns the list of breaches in a text file. (automated)
+
+3. Check the email associated with your slack account as well as any email you pass as a parameter. Returns if you have been pwned along with details of the breaches. (pwned, pwned *email*)
 
 ## Deploy
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
